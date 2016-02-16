@@ -4,7 +4,7 @@ dead simple nodejs http web framework
 
 ### Installation
 ````
-$ [sudo] npm install kelp
+$ npm install kelp --save
 ````
 
 
