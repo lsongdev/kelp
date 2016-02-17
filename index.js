@@ -20,7 +20,7 @@ module.exports = function Kelp(config){
    * @type {Array}
    */
   app.stack  = [];
-  app.config = Object.create(config);
+  app.config = Object.create(config || {});
   /**
    * [function description]
    * @param  {[type]} middlewares [description]
