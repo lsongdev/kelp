@@ -1,5 +1,5 @@
 'use strict';
-module.exports = function Kelp(){
+module.exports = function Kelp(config){
   /**
    * [app description]
    * @param  {[type]} req [description]
@@ -19,7 +19,8 @@ module.exports = function Kelp(){
    * [stack description]
    * @type {Array}
    */
-  app.stack = [];
+  app.stack  = [];
+  app.config = Object.create(config);
   /**
    * [function description]
    * @param  {[type]} middlewares [description]
