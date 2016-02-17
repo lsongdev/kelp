@@ -1,12 +1,11 @@
 ## kelp ![npm](https://badge.fury.io/js/kelp.png)
 
-dead simple nodejs http web framework
+dead simple nodejs http web framework :rocket:
 
 ### Installation
 ````
 $ npm install kelp --save
 ````
-
 
 ### Example
 ````javascript
@@ -24,6 +23,7 @@ http.createServer(app).listen(3000);
 
 ### API
 
++ use
 
 ### Contributing
 - Fork this repo
