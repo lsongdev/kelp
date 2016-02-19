@@ -11,7 +11,7 @@ module.exports = function Kelp(config){
     (function next(){
       var middleware = app.stack[ ++i ];
       if(middleware){
-        middleware(req, res, next);
+        middleware.apply(self, [ req, res, next ]);
       }
     })();
   };
