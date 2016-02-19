@@ -27,8 +27,7 @@ module.exports = function Kelp(config){
    * @return {[type]}             [description]
    */
   app.use = function(middlewares){
-    middlewares = [].slice.call(arguments);
-    this.stack = this.stack.concat(middlewares);
+    this.stack = this.stack.push.apply(this.stack, arguments);
     return app;
   };
   return app;
