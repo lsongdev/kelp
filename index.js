@@ -1,5 +1,5 @@
 'use strict';
-module.exports = function Kelp(config){
+module.exports = function Kelp(){
   /**
    * [app description]
    * @param  {[type]} req [description]
@@ -8,10 +8,10 @@ module.exports = function Kelp(config){
    */
   function app(req, res){
     var self = this, i = -1;
-    (function next(){
+    (function next(err){
       var middleware = app.stack[ ++i ];
-      if(middleware){
-        middleware.apply(self, [ req, res, next ]);
+      if(typeof middleware == 'function'){
+        middleware.apply(self, [ req, res, next, err ]);
       }
     })();
   };
@@ -20,15 +20,17 @@ module.exports = function Kelp(config){
    * @type {Array}
    */
   app.stack  = [];
-  app.config = Object.create(config || {});
   /**
    * [function description]
    * @param  {[type]} middlewares [description]
    * @return {[type]}             [description]
    */
   app.use = function(middlewares){
-    this.stack = this.stack.push.apply(this.stack, arguments);
+    this.stack = [].concat.apply(this.stack, arguments);
     return app;
   };
+  /**
+   * expose
+   */
   return app;
 };
