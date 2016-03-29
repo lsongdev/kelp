@@ -25,6 +25,36 @@ http.createServer(app).listen(3000);
 
 + use
 
+### Benchmarks
+
+> 2 GHz Intel Core i7 / 8 GB 1600 MHz DDR3 / v4.1.2
+
+```bash
+  1 middleware
+  17710.10
+
+  5 middleware
+  19057.27
+
+  10 middleware
+  17320.05
+
+  15 middleware
+  16792.36
+
+  20 middleware
+  20580.80
+
+  30 middleware
+  16053.46
+
+  50 middleware
+  19124.45
+
+  100 middleware
+  16800.39
+```
+
 ### Contributing
 - Fork this repo
 - Clone your repo
