@@ -27,6 +27,10 @@ http.createServer(app).listen(3000);
 
 ### Benchmarks
 
+```bash
+~$ npm run benchmark
+```
+
 > 2 GHz Intel Core i7 / 8 GB 1600 MHz DDR3 / v4.1.2
 
 ```bash
@@ -53,6 +57,12 @@ http.createServer(app).listen(3000);
 
   100 middleware
   16800.39
+```
+
+### Test
+
+```bash
+~$ npm test
 ```
 
 ### Contributing
