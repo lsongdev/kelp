@@ -1,10 +1,10 @@
 const http = require('http');
 const kelp = require('..');
 
-const app = new kelp();
+const app = kelp();
 
 // number of middleware
-var n = parseInt(process.env.MW || '1', 10);
+var n = parseInt(process.env.MW || 1, 10);
 
 console.log('  %d middleware', n);
 

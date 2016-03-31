@@ -1,10 +1,11 @@
 {
   "name": "kelp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "dead simple nodejs http web framework",
   "main": "index.js",
   "scripts": {
-    "start": "node example"
+    "start": "node example",
+    "test" : "./node_modules/.bin/mocha "
   },
   "repository": {
     "type": "git",
