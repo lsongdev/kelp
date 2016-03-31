@@ -1,4 +1,4 @@
-## kelp ![npm](https://badge.fury.io/js/kelp.png)
+## kelp ![npm](https://badge.fury.io/js/kelp.png) [![Build Status](https://travis-ci.org/song940/kelp.svg?branch=master)](https://travis-ci.org/song940/kelp)
 
 dead simple nodejs http web framework :rocket:
 
