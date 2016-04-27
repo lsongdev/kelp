@@ -1,6 +1,6 @@
 {
   "name": "kelp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "dead simple nodejs http web framework",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/song940/kelp#readme",
   "keywords": [
-    "web",
+    "kelp",
     "framework"
   ],
   "directories": {
