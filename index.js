@@ -36,5 +36,5 @@ module.exports = function Kelp(){
   /**
    * expose
    */
-  return app;
+  return app.use.apply(app, arguments);
 };

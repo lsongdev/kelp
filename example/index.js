@@ -1,10 +1,8 @@
 const http = require('http');
 const kelp = require('../');
 
-const app = kelp();
-
-app.use(function(req, res, next){
-  res.end('hello!');
+const app = kelp(function(req, res){
+  res.end('test');
 });
 
 http.createServer(app).listen(3000);
