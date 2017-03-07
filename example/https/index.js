@@ -1,7 +1,7 @@
 const fs    = require('fs');
 const path  = require('path');
 const https = require('https');
-const kelp  = require('kelp');
+const kelp  = require('../../');
 
 const options = {
   key : fs.readFileSync(path.join(__dirname, 'certs', 'key.pem')),
