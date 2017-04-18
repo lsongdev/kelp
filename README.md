@@ -1,5 +1,7 @@
 ## kelp ![npm](https://badge.fury.io/js/kelp.png) [![Build Status](https://travis-ci.org/song940/kelp.svg?branch=master)](https://travis-ci.org/song940/kelp)
 
+[![Join the chat at https://gitter.im/song940/kelp](https://badges.gitter.im/song940/kelp.svg)](https://gitter.im/song940/kelp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 dead simple nodejs http web framework :rocket:
 
 ### Installation
