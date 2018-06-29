@@ -14,8 +14,21 @@ const kelp = require('kelp');
 
 const app = kelp();
 
-app.use(function(req, res, next){
-  res.end('hello!');
+const sleep = (n = 1) =>
+  new Promise(done => setTimeout(done, n * 1e3));
+
+app.use(async (req, res, next) => {
+  console.log(1);
+  await next();
+  console.log(2);
+});
+
+app.use(async (req, res, next) => {
+  console.log(3);
+  await sleep();
+  res.end(`hello world`);
+  await next();
+  console.log(4);
 });
 
 http.createServer(app).listen(3000);
