@@ -1,6 +1,6 @@
 {
   "name": "kelp",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "dead simple nodejs http web framework",
   "main": "index.js",
   "scripts": {
