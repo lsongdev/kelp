@@ -25,9 +25,5 @@
   "directories": {
     "example": "example",
     "test": "test"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "mocha": "*"
   }
 }

@@ -3,7 +3,7 @@
  * [exports Kelp]
  * @return {[type]} [description]
  */
-module.exports = function Kelp() {
+function Kelp() {
   /**
    * [app http server handler]
    * @param  {[type]} req [request]
@@ -11,11 +11,11 @@ module.exports = function Kelp() {
    * @return {[type]}     [undefined]
    */
   function app(req, res) {
-    var self = this, i = -1;
+    let self = this, i = -1;
     (async function next(err) {
-      var middleware = app.stack[++i];
+      const middleware = app.stack[++i];
       if (typeof middleware == 'function') {
-        await middleware.apply(self, [req, res, next]);
+        return middleware.call(self, req, res, next, err);
       }
     })();
   };
@@ -38,3 +38,5 @@ module.exports = function Kelp() {
    */
   return app.use.apply(app, arguments);
 };
+
+module.exports = Kelp;
