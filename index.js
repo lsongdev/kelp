@@ -11,12 +11,10 @@ function Kelp() {
    * @return {[type]}     [undefined]
    */
   function app(req, res) {
-    let self = this, i = -1;
+    var self = this, i = -1, mw;
     (async function next(err) {
-      const middleware = app.stack[++i];
-      if (typeof middleware == 'function') {
-        return middleware.call(self, req, res, next, err);
-      }
+      mw = app.stack[++i];
+      return mw && mw.call(self, req, res, next, err);
     })();
   };
   /**

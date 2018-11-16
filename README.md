@@ -44,32 +44,32 @@ http.createServer(app).listen(3000);
 ~$ npm run benchmark
 ```
 
-> 2 GHz Intel Core i7 / 8 GB 1600 MHz DDR3 / v4.1.2
+> MacBook Pro (Retina, 15-inch, Mid 2015) 2.2 GHz Intel Core i7 / 16 GB 1600 MHz DDR3 / 10.13.0
 
 ```bash
   1 middleware
-  17710.10
+  22756.60
 
   5 middleware
-  19057.27
+  21743.43
 
   10 middleware
-  17320.05
+  21241.57
 
   15 middleware
-  16792.36
+  19995.93
 
   20 middleware
-  20580.80
+  19074.04
 
   30 middleware
-  16053.46
+  18365.52
 
   50 middleware
-  19124.45
+  16786.10
 
   100 middleware
-  16800.39
+  12842.54
 ```
 
 ### Test
