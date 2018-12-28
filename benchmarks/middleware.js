@@ -14,11 +14,12 @@ while (n--) {
   });
 }
 
-var body = new Buffer('Hello World');
+var body = Buffer.from('Hello World');
 
-app.use(function(req, res, next){
+app.use(async (req, res, next) => {
   res.statusCode = 200;
   res.end(body);
+  next();
 });
 
 http.createServer(app).listen(3333);

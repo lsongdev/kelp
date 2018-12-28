@@ -4,8 +4,9 @@ const assert = require('assert');
 const kelp   = require('..');
 //
 const app = kelp()
-.use(function(req, res){
+.use(async (req, res, next) => {
   res.end('Hello, world!');
+  await next();
 });
 //
 

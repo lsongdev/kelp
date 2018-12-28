@@ -1,6 +1,6 @@
 {
   "name": "kelp",
-  "version": "1.0.5",
+  "version": "2.0.2",
   "description": "dead simple nodejs http web framework",
   "main": "index.js",
   "scripts": {
@@ -25,9 +25,5 @@
   "directories": {
     "example": "example",
     "test": "test"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "mocha": "*"
   }
 }
